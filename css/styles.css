@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	color: white;
+}
+
+body {
+	background-color: #222c4e;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#elements {
+	z-index: 1; 
+	position: absolute;
+	width: 31%;
+    height: 36%;
+	left: 11%;
+	top: 25%;
+}
+
+a {
+	text-decoration: none;
+}
+
+video{
+	box-sizing: border-box;
+	width:100vw;
+	height: 100vh;
+	object-fit: cover;
+	/*padding: 1%;*/
+	z-index: -1;
+}
+
+h1 {
+	display: inline-block;
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+    font-size: 8rem;
+    font-weight: 400;
+    line-height: 62px;
+    width: 400px;
+    height: 100px;
+    margin-bottom: 298px;
+    padding: 35px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+#rule1 {
+	display: inline-block;
+    width: 435px;
+    height: 29px;
+    position: relative;
+    top: -50px;
+    z-index: -1;
+    background-color: rgba(127, 1, 11, 0.8);
+}
+
+h2 {
+	font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    word-spacing: 2px;
+    line-height: 35px;
+    position: relative;
+    top: -220px;
+    margin-left: 50px;
+}
+
+h2 a {
+	font-family: 'Lato', sans-serif;
+	font-weight: 800;
+	font-size: 25px;
+	letter-spacing: 1px;
+	/*border-bottom: 1.5px dotted white;*/
+}
+
+h2 a:hover {
+	border-left: 5px solid rgba(127, 1, 11, 1);
+}
+
+h2 a:visited {
+	animation: 1s slideInFromBottom;
+}
+
+@keyframes slideOutFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#bottomBar {
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	position: absolute;
+	bottom: 10%;
+	right: 25%;
+	color: beige;
+	letter-spacing: .5px;
+}
+
+#bottomBar em{
+	color: beige;
+	height: 30px;
+	margin-bottom: 4px;
+	width: 100px;
+}
+
+#bottomBar em:hover {
+	position: relative;
+	bottom: 2px;
+}
+
+#playButton {
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	font-size: 8px;
+	position: relative;
+	left: 300px;
+	top: -2px;
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	border: .8px solid beige;
+	box-sizing: border-box;
+	padding-left: 3px;
+	padding-top: 7px;
+}
+
+#playButton i:first-of-type {
+    font-size: 10px;
+    color: beige;
+    position: relative;
+    right: -7.8px;
+    opacity: 0;
+    top: 1.5px;
+}
+
+#playButton i:last-of-type {
+	color: beige;
+    font-size: 10px;
+    position: relative;
+    right: 3.5px;
+    top: 2px;
+}
+
+#playButton:hover {
+	border: .8px dashed beige;
+}
+
+
+
+
